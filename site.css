@@ -1,0 +1,30 @@
+/* Paul Fralix CSS Site file Assignment 3-2 */
+
+/* Container styling */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Headings styling */
+h1, h2, h3, h4 {
+    background-color: blue; /* header background */
+    color: red;             /* header text color */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Anchor tag styling */
+a {
+    color: brown;           /* link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8B4513;         /* darker brown on hover */
+}
+
+a:visited {
+    color: brown;           /* visited links same as regular links */
+}
