@@ -1,0 +1,53 @@
+/* Paul Fralix Module 3 Assignment 3_3 CSS Styling */
+
+/* Center h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+.left, .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Last div */
+.bottom {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* h3 tags weight */
+h3 {
+    font-weight: 500;
+}
+
+/* Lists weight */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Ordered list container (Left) */
+.left-container {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+/* Unordered list container (Right) */
+.right-container {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/* Links hover underline */
+a:hover {
+    text-decoration: underline;
+}
