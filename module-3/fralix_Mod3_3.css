@@ -14,10 +14,10 @@ h1 {
 
 /* Last div */
 .last-div {
-    width: 100%;
-    margin-top: 60%;
     float: right;
     margin-bottom: 20px;
+    width: 100%;
+    margin-top: 60%;
 }
 
 /* h3 tags weight */
