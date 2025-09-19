@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Paul Fralix 
+    Assignment 9.3
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paul Fralix">
+    <meta name="description" content="CSD 340 Assignment 9.3 JavaScript Exercise">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    
+    <script>
+        var wordOne = "tight-knit";
+        var wordTwo = "supportive";
+        var wordThree = "active";
+        var wordFour = "rewarding";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Chapter 1: Brief Introduction of Myself</h2>
+
+        <p class="intro">
+            I was born and raised in a small town that has a <span id="wordOne">_________</span> community.
+            Growing up, I loved exploring the outdoors and spending time with friends.
+            <span class="sentence">My favorite hobbies are watching Doctor Who and visiting the Disney Parks to people watch.</span>
+        </p>
+
+        <p>
+            My family has always been very <span id="wordTwo">_________</span> of my goals and ambitions.
+            We often enjoy weekend trips together and spend quality time talking about our week.
+            I also have two younger siblings who share many of my interests, which makes our bond even stronger.
+        </p>
+
+        <p>
+            During my free time, I enjoy spending time with my kids and wife and staying <span id="wordThree">_________</span>.
+            Riding bike and swimming are my favorites, but I also like trying new activities.
+            Being physically active helps me maintain focus and energy for my studies.
+        </p>
+
+        <p>
+            I have always been passionate about technology and learning new skills.
+            Experimenting with coding and web design has become a hobby that I find both challenging and <span id="wordFour">_________</span>.
+            I look forward to applying these skills to future projects and career opportunities.
+        </p>
+
+        <p>
+            <button onclick="document.getElementById('wordOne').innerHTML = wordOne">tight-knit</button>
+            <button onclick="document.getElementById('wordTwo').innerHTML = wordTwo">supportive</button>
+            <button onclick="document.getElementById('wordThree').innerHTML = wordThree">active</button>
+            <button onclick="document.getElementById('wordFour').innerHTML = wordFour">rewarding</button>
+        </p>
+
+        <hr>
+
+        
+        <footer>
+            <p>&copy;2025 Paul Fralix</p>
+        </footer>
+    </div>
+</body>
+</html>
