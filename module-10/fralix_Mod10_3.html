@@ -1,0 +1,59 @@
+<!-- Paul Fralix Assignment 10.3: JavaScript - Part 2
+  CSD 340 Web Development with HTML and CSS -->
+
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      width: 150px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .mainImage {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+  <p>Click an image below to display it in full:</p>
+
+  <img src="images/ocean_wave_1.jpg" alt="Wave" onclick="displayImage('images/ocean_wave_1.jpg')">
+  <img src="images/ocean_wave_2.jpg" alt="Wave" onclick="displayImage('images/ocean_wave_2.jpg')">
+  <img src="images/volcano_1.jpg" alt="Volcano" onclick="displayImage('images/volcano_1.jpg')"> 
+  <img src="images/ethereal_blue_volcano.jpg" alt="Blue Lava Volcano" onclick="displayImage('images/ethereal_blue_volcano.jpg')">
+
+  <img id="mainImage" src="images/ocean_wave_1.jpg" alt="Large Image" class="mainImage" style="width: 600px; height: 400px;">
+
+  <script>
+    function displayImage(imageFile) {
+      const oldImage = document.getElementById("mainImage");
+      const newImage = document.createElement("img");
+      newImage.id = "mainImage";
+      newImage.src = imageFile;
+      newImage.alt = "Large Image";
+      newImage.className = "mainImage";
+      newImage.style.width = "600px";
+      newImage.style.height = "400px";
+      oldImage.parentNode.replaceChild(newImage, oldImage);
+    }
+  </script>
+</body>
+</html>
